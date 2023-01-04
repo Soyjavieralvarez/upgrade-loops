@@ -119,3 +119,10 @@ const toys3 = [
 	{id: 40, name: 'El gato felix', sellCount: 35}
 ]
 
+for (const toy2 of toys3){
+    if (toy2.sellCount > 15){
+    popularToys.push(toy2);
+}
+}
+
+console.log(popularToys)
