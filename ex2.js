@@ -85,5 +85,37 @@ for (let i = 0; i < placesToTravel2.length; i++){
 
 console.log(placesToTravel2);
 
+//!Interacción 6
 
+//?Usa un bucle for para recorrer todos los juguetes y elimina los que tengan la palabra gato. Puedo usar include.
+
+const toys = [
+{id: 5, name: 'Buzz MyYear'}, 
+{id: 11, name: 'Action Woman'}, 
+{id: 23, name: 'Barbie Man'}, 
+{id: 40, name: 'El gato con Guantes'},
+{id: 40, name: 'El gato felix'}
+]
+
+for (let i = 0; i < toys.length; i++){
+    if (toys[i].name.includes('gato')) {
+        toys.splice(i, 1)
+        i--;
+    }
+}
+
+console.log(toys);
+
+//!Interacción 7. 
+
+//?Usa un bucle forof para recorrer todos los juguetes y añade los que tengán mas de 15 ventas al arraypopularToys imprimiendo por clg. 
+
+const popularToys = [];
+const toys3 = [
+	{id: 5, name: 'Buzz MyYear', sellCount: 10}, 
+	{id: 11, name: 'Action Woman', sellCount: 24}, 
+	{id: 23, name: 'Barbie Man', sellCount: 15}, 
+	{id: 40, name: 'El gato con Guantes', sellCount: 8},
+	{id: 40, name: 'El gato felix', sellCount: 35}
+]
 
